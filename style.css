@@ -322,6 +322,7 @@ justify-content: space-around;
 }
 
 .contacts-column svg {
+  padding: 15px;
   width: 90px;
   height: 90px;
 }
