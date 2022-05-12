@@ -7,7 +7,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  cursor: pointer;
   background: #fa6023;
   color: #000;
 }
@@ -15,14 +14,18 @@ body {
 /**  HEADER **/
 
 header {
-  display: flex;
-  justify-content: space-between;
+  /* cursor: pointer; */
+  /* display: flex;
+  justify-content: space-evenly;    почему? */
   height: 150px;
   background: #fff;
 }
-
-.header-logo {
-  padding: 50px 0 25px 50px;
+.wrapper {
+display: flex;
+justify-content: space-between;
+width: 80%;
+margin: 0 auto ;
+padding-top: 60px;
 }
 
 .header-logo a {
@@ -30,10 +33,6 @@ header {
   font-size: 24px;
   font-weight: bold;
   color: #000;
-}
-
-nav {
-  padding: 50px 50px 25px 0;
 }
 
 nav a {
@@ -70,7 +69,7 @@ nav a:hover {
 }
 
 .main-photo {
-  padding: 20px 35px;
+  margin: 35px;
   min-width: 360px;
 }
 
@@ -90,11 +89,22 @@ nav a:hover {
 }
 
 .main-btn {
+  cursor: pointer;
   margin-top: 18px;
   font-size: 25px;
   padding: 15px;
   background: #fa6023;
   border: none;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #fa6023 inset, 0 0 0 0 #fa6023;
+  transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.main-btn:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 10px 0 #fa6023 inset, 0 0 10px 4px #fa6023;
 }
 
 .about {
@@ -103,24 +113,33 @@ nav a:hover {
   margin-bottom: 100px;
 }
 
+.list-items {
+  padding-top: 15px;
+}
 .skills {
   background: #fff;
   padding-bottom: 100px;
 }
+.skills-section {
+  flex-direction: column;
+  align-items: center;
+}
 
-.wrapper {
+.skills-wrapper {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .skills-title {
-  margin:0 0 70px 160px;
   text-transform: uppercase;
   font-size: 26px;
-  padding-top: 50px;
+  margin-bottom: 50px;
 }
 
-.scills-collum {
-  width: calc(29.166666666666668% - 30px);
+.skills-list li{
+  font-size: 18px;
+  line-height: 45px;
 }
 
 .scills-collum p {
@@ -128,20 +147,13 @@ nav a:hover {
   font-weight: 600;
   letter-spacing: 0.07em;
   margin-bottom: 20px;
-  padding-left: 160px;
-}
-
-.scills-collum ul {
-  padding-left: 170px;
-}
-
-.skills-collum li {
-  font-size: 18px;
-  margin-bottom: 10px;
-  letter-spacing: .07em;
+  height: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .scills-collum p svg {
+  padding-right: 7px;
   width: auto;
   max-width: 32px;
   height: 32px;
@@ -155,14 +167,9 @@ nav a:hover {
   margin-right: 10px;
 }
 
-.footer-social {
-  padding-left: 50px;
-}
-
 .footer-social h3 {
   text-transform: uppercase;
   font-size: 26px;
-  padding-top: 50px;
 }
 
 .footer-social a  {
@@ -172,23 +179,21 @@ font-weight: bold;
 }
 
 .footer-social li {
-  margin-top: 25px;
   list-style: none;
-}
-
-.footer-nav {
-  padding-top: 35px;
-  padding-left: 200px;
+  font-size: 18px;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
 }
 
 .footer-nav li{
  list-style: none;
-margin-top: 40px;
 font-weight: bold;
+font-size: 18px;
+line-height: 45px;
 }
 
 .copyright {
-  margin: 50px 0 0 50px;
   font-weight: bold;
 }
 
@@ -282,12 +287,19 @@ font-weight: bold;
   color: white;
   font-size: 14px;
 }
+.form-inner input[type="submit"]:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 10px 0 #fa6023 inset, 0 0 10px 4px #fa6023;
+}
 
 .form-inner textarea {
   resize: none;
 }
 
 .form-inner h3 {
+  display: flex;
+ justify-content: center;
   margin-top: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -303,6 +315,10 @@ font-weight: bold;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
+}
+.contacts-column a {
+  display: flex;
+  align-items: center;
 }
 
 .contacts-column svg {

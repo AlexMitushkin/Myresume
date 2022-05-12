@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,16 +15,19 @@
   </head>
   <body>
     <header class="header">
-        <div class="header-logo"><a href="https://github.com/AlexMitushkin">Alex Mitushkin<span> </span></a> </div>
+      <div class="wrapper">
+        <div class="header-logo">
+          <a href="https://github.com/AlexMitushkin">
+            Alex Mitushkin</a>
+        </div>
         <nav>
-          <div class="nav">
             <a href="index.html">Главная</a>
             <a href="portfolio.html">Портфолио</a>
             <a href="about.html">Обо мне</a>
             <a href="contacts.html">Контакты</a>
             <a href="#" class="nav-menu-icon">&#9776</a>
-          </div>
         </nav>
+      </div>
     </header>
     <div class="content">
       <div class="main">
@@ -46,39 +49,40 @@
             </div>
       </div>
       <div class="about">
-        <div>
-       <h2>Личные  данные </h2>
-
-       <p><span>Имя :</span>  Митюшкин Александр </p>
-       <p><span> Адрес :</span> г.Запорожье ул. Парамонова 4 кв.172</p>
-       <p><span>Номер телефона :</span>  +38 093 4618736</p>
-       <p><span>Email :</span>  am2010zp@gmail.com</p>
-       <p><span>Дата рождения :</span> 25-12-1989</p>
+        <div class="wrapper">
+          <div>
+            <h2>Личные  данные </h2>
+              <p class="list-items"><span>Имя :</span>  Митюшкин Александр </p>
+              <p class="list-items"><span>Номер телефона :</span>  +38 093 4618736</p>
+              <p class="list-items"><span>Email :</span>  am2010zp@gmail.com</p>
+              <p class="list-items"><span>Дата рождения :</span> 25-12-1989</p>
      </div>
      <div>
        <h2>Хобби / Интересы  </h2>
-       <p>Активный отдых</p>
-       <p>Рыбалка </p>
-       <p>Компьютерные игры </p>
+       <p class="list-items">Активный отдых</p>
+       <p class="list-items">Рыбалка </p>
+       <p class="list-items">Компьютерные игры </p>
      </div>
      <div>
        <h2>Знание языков </h2>
-       <p>Украинский свободно &#9733;&#9733;&#9733;&#9733;&#9733;</p>
-       <p>Русский свободно &#9733;&#9733;&#9733;&#9733;&#9733;</p>
-       <p>Английский средне  &#9733;&#9733;</p>
+       <p class="list-items">Украинский свободно &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+       <p class="list-items">Русский свободно &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+       <p class="list-items">Английский средне  &#9733;&#9733;</p>
      </div>
     </div>
+    </div>
 <div class="skills">
-  <h3 class="skills-title">Мои навыки</h3>
-  <div class="wrapper">
  
+  <div class="wrapper skills-section">
+    <h3 class="skills-title">Мои навыки</h3>
+    <div class="skills-wrapper">
     <div class="scills-collum">
       <p><svg viewBox="0 0 32 32">
               <path fill="#E44D26" d="M27.38 28.89L16 32 4.63 28.89 2 0h28z"></path>
               <path fill="#FF6C39" d="M16 2v27.75l9.23-2.74L27.69 2z"></path>
               <path fill="#FFF" d="M24.36 6H7.61L8 10l.62 7H19.5l-.35 3.98L16 21.99l-3.14-1.01-.21-1.98H8.8l.46 4.99 6.74 2 6.73-2L23.72 13H12.25L12 10h12z"></path>
           </svg> HTML5/CSS3</p>
-      <ul>
+      <ul class="skills-list">
           <li>Валидный, кроссбраузерный код</li>
           <li>Семантическая верстка</li>
           <li>Структурированный код</li>
@@ -89,7 +93,7 @@
   <div class="scills-collum">
     <p><svg viewBox="0 0 32 32" fill="none">
             <path d="M28.57 0H3.43A3.43 3.43 0 000 3.43v25.14C0 30.47 1.54 32 3.43 32h25.14c1.9 0 3.43-1.54 3.43-3.43V3.43C32 1.53 30.46 0 28.57 0zM17.41 24.96c0 3.11-1.82 4.53-4.49 4.53-2.4 0-3.8-1.24-4.51-2.75l2.45-1.48c.47.84.9 1.55 1.93 1.55.99 0 1.62-.39 1.62-1.9V14.7h3v10.27zm7.12 4.53c-2.8 0-4.6-1.33-5.48-3.07l2.45-1.41c.64 1.05 1.49 1.83 2.96 1.83 1.25 0 2.05-.63 2.05-1.49 0-1.03-.82-1.4-2.2-2l-.75-.32c-2.17-.92-3.6-2.09-3.6-4.54 0-2.25 1.72-3.97 4.4-3.97 1.91 0 3.28.67 4.27 2.4l-2.34 1.5c-.52-.91-1.08-1.28-1.94-1.28-.88 0-1.44.56-1.44 1.29 0 .9.56 1.26 1.85 1.83l.75.32c2.56 1.1 4 2.21 4 4.73 0 2.7-2.13 4.18-4.98 4.18z" fill="#F38B3F"></path></svg> Javascript</p>
-    <ul>
+    <ul class="skills-list">
         <li>Нативный javascript</li>
         <li>Комментируемый код</li>
     </ul>
@@ -101,18 +105,21 @@
           <path d="M1 3.6A3.3 3.3 0 014.2.3h3.2V7H4.3A3.3 3.3 0 01.9 3.6z" fill="#F24E1E"></path>
           <path d="M7.5.3h3.1A3.3 3.3 0 0114 3.6 3.3 3.3 0 0110.6 7H7.5V.3z" fill="#FF7262"></path>
           <path d="M14 10.2a3.3 3.3 0 01-3.8 3.3A3.3 3.3 0 017.5 11a3.3 3.3 0 013.1-4 3.3 3.3 0 013.4 3.2z" fill="#1ABCFE"></path></svg> Photoshop/Figma</p>
-  <ul>
+  <ul class="skills-list">
       <li>Нарезка изображений из макета</li>
       <li>Экспорт стилей для ускоренной верстки</li>
   </ul>
+</div>
 </div>
   </div>
 </div>
 </div>
 <footer class="footer">
-  <div class="wrapper">
+  <div class="wrapper skills-section">
+       <h3 class="skills-title">Связаться со мной</h3>
+    <div class="skills-wrapper">
     <div class="footer-social">
-      <h3>Связаться со мной</h3>
+   
       <ul>
       <li>
         <svg viewBox="0 0 252 252" fill="none">
@@ -153,8 +160,9 @@
       </ul>
     </div>
   </div>
-  <div class="copyright">
-    <p>© 2022 Александр Митюшкин | Front-end разработчик.</p>
+  </div>
+  <div class="copyright wrapper">
+    © 2022 Александр Митюшкин | Front-end разработчик.
 </div>
 </footer>
   </body>
