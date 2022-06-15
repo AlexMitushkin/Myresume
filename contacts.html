@@ -5,28 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./adaptive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
     <title>Document</title>
   </head>
+  
   <body>
     <header class="header">
       <div class="wrapper">
+        <div class="hamb">
+          <div class="hamb-field" id="hamb">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
         <div class="header-logo">
           <a href="https://github.com/AlexMitushkin">
             Alex Mitushkin</a>
         </div>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="portfolio.html">Портфолио</a>
-            <a href="about.html">Обо мне</a>
-            <a href="contacts.html">Контакты</a>
-            <a href="#" class="nav-menu-icon">&#9776</a>
+        <nav class="navbar">
+          <a href="index.html">Главная</a>
+          <a href="portfolio.html">Портфолио</a>
+          <a href="about.html">Обо мне</a>
+          <a href="contacts.html">Контакты</a>
         </nav>
+        <div class="popup" id="popup"></div>
       </div>
     </header>
     <form class="decor">

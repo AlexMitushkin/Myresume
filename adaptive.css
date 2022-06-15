@@ -1,0 +1,201 @@
+@media screen and (max-width: 576px){
+
+  header {
+    height: 100px;
+  }
+  .wrapper {
+    width: 90%;
+    padding-top: 40px;
+  }
+  nav {
+    display: none;
+  }
+  .hamb {
+    display: block;
+  }
+  .main {
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+  .main h1 {
+    font-size: 20px;
+}
+.main-photo {
+  margin: 0 auto;
+  display: inline-block;
+  /* object-fit: cover; */
+}
+.main-btn {
+  margin: 20px auto; /* почему не по центру ?*/
+  width: 50%;
+}
+.about .wrapper {
+flex-wrap: wrap;
+margin-bottom: 20px ;
+justify-content: center;
+}
+.about .wrapper div{
+  margin-bottom: 35px;
+}
+.skills-wrapper  {
+  flex-wrap: wrap;
+}
+.portfolio-wrapper {
+  justify-content: center;
+}
+.contacts-column {
+  margin-top: 30px;
+  height: 270px;
+}
+.skills-list ul li{
+margin: 0 auto;  /* почему не по центру ?*/
+}
+.copyright {
+  justify-content: center;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+  header {
+    height: 100px;
+  }
+  .wrapper {
+    width: 90%;
+    padding-top: 40px;
+  }
+  nav {
+    display: none;
+  }
+  .hamb {
+    display: block;
+  }
+  .main {
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+  .main h1 {
+    font-size: 20px;
+    text-align: center;
+}
+.main-subtitle {
+  text-align: center;
+}
+.main-photo {
+  margin: 0 auto;
+  display: inline-block;
+  /* object-fit: cover; */
+}
+.main-btn {
+  margin: 20px auto; /* почему не по центру ?*/
+  width: 50%;
+
+}
+.about .wrapper {
+flex-wrap: wrap;
+margin-bottom: 20px ;
+justify-content: center;
+}
+.about .wrapper div{
+  margin-bottom: 35px;
+  margin-right: 50px;
+}
+.skills-wrapper  {
+  flex-wrap: wrap;
+}
+.skills-list li{
+margin: 0 auto;  /* почему не по центру ?*/
+}
+.portfolio-wrapper {
+  justify-content: center;
+}
+.contacts-column {
+  margin-top: 30px;
+  height: 250px;
+
+}
+.copyright {
+  text-align: center; /*не работает на этом разрешении  ???*/
+}
+}
+
+@media screen and (max-width: 1001px) {
+ 
+  header {
+    height: 100px;
+  }
+  .wrapper {
+    width: 90%;
+    padding-top: 40px;
+  }
+  nav {
+    display: none;
+  }
+  .hamb {
+    display: block;
+  }
+  .main {
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+  .main h1 {
+    font-size: 20px;
+    text-align: center;
+}
+.main-subtitle {
+  text-align: center;
+}
+.main-photo {
+  margin: 0 auto;
+  display: inline-block;
+  /* object-fit: cover; */
+}
+.main-btn {
+  margin: 20px auto; /* почему не по центру ?*/
+  width: 50%;
+}
+.about .wrapper {
+flex-wrap: wrap;
+margin-bottom: 20px ;
+justify-content: center;
+}
+.about .wrapper div{
+  margin-bottom: 35px;
+  margin-right: 50px;
+}
+.skills-list li {
+  font-size: 16px;
+  line-height: 30px;
+}
+.copyright {
+  text-align: center; /*не работает на этом разрешении  ???*/
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
